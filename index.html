@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/Icono.png" type="image/x-icon">
 
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -13,15 +13,19 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive plants website - Bedimcode</title>
+        <title>Pie Franco</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">
+                <div class="header__logo">
+                    <img href="#" src="assets/img/Logo.png" alt="" class="img__logo">
+
+                </div>
+                <!-- <a href="#" class="nav__logo">
                     <i class="ri-leaf-line nav__logo-icon"></i> Plantex
-                </a>
+                </a> -->
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -29,16 +33,16 @@
                             <a href="#home" class="nav__link active-link">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                            <a href="#about" class="nav__link">Nosotros</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#products" class="nav__link">Products</a>
+                            <a href="#products" class="nav__link">Productos</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#faqs" class="nav__link">FAQs</a>
+                            <a href="#faqs" class="nav__link">Preguntas</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact Us</a>
+                            <a href="#contact" class="nav__link">Contactanos</a>
                         </li>
                     </ul>
 
@@ -62,18 +66,18 @@
             <!--==================== HOME ====================-->
             <section class="home" id="home">
                 <div class="home__container container grid">
-                    <img src="assets/img/home.png" alt="" class="home__img">
+                    <img src="assets/img/Home_1.png" alt="" class="home__img">
 
                     <div class="home__data">
                         <h1 class="home__title">
-                            Plants will make <br> your life better
+                            De Mendoza, <br> al mundo.
                         </h1>
                         <p class="home__description">
-                            Create incredible plant design for your offices or apastaments. 
-                            Add fresness to your new ideas.
+                            Nuestros jugos y concentrados se elaboran 100% a partir de uvas frescas mendocinas con 
+                            propiedades naturales antioxidantes, minerales y vitamínicas.
                         </p>
                         <a href="#about" class="button button--flex">
-                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                            Conocenos más <i class="ri-arrow-right-down-line button__icon"></i>
                         </a>
                     </div>
 
@@ -98,35 +102,73 @@
             <!--==================== ABOUT ====================-->
             <section class="about section container" id="about">
                 <div class="about__container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
+                    <!-- Toda la sección imágenes -->
+                    <div class="about__img">
+                        
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 3</div>
+                              <img src="./assets/img/Slide_uva.png" style="width:100%">
+                              <div class="text">Nuestra materia prima</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 3</div>
+                              <img src="./assets/img/Slide_dueña.png" style="width:100%">
+                              <div class="text">Nuestros viñedos</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                              <img src="./assets/img/Slide_vaso.png" style="width:100%">
+                              <div class="text">Single Strength</div>
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(1)"></span> 
+                              <span class="dot" onclick="currentSlide(2)"></span> 
+                              <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
+                    </div>
+                   
+                    <!-- <img src="assets/img/about.png" alt="" class="about__img"> -->
 
                     <div class="about__data">
                         <h2 class="section__title about__title">
-                            Who we really are & <br> why choose us
+                            Quiénes somos & <br> por qué elegirnos
                         </h2>
 
                         <p class="about__description">
-                            We have over 4000+ unbiased reviews and our customers 
-                            trust our plant process and delivery service every time
+                            Somos una empresa familiar con más de 50 años de experiencia en el rubro 
+                            vitivinícola y 3 generaciones de profesionales que aman su tierra y su actividad.
                         </p>
 
                         <div class="about__details">
                             <p class="about__details-description">
                                 <i class="ri-checkbox-fill about__details-icon"></i>
-                                We always deliver on time.
+                                Ofrecemos productos de calidad, con la adaptabilidad que nos otorga ser una
+                                empresa mediana conducida por sus dueños.
                             </p>
                             <p class="about__details-description">
                                 <i class="ri-checkbox-fill about__details-icon"></i>
-                                We give you guides to protect and care for your plants.
+                                Brindamos una atención distinguida y personalizada a nuestros clientes.
                             </p>
                             <p class="about__details-description">
                                 <i class="ri-checkbox-fill about__details-icon"></i>
-                                We always come over for a check-up after sale.
+                                Crecemos día a día a partir de tres pilares fundamentales: Calidad, Puntualidad
+                                 y Precios Competitivos.
                             </p>
-                            <p class="about__details-description">
+                            <!-- <p class="about__details-description">
                                 <i class="ri-checkbox-fill about__details-icon"></i>
                                 100% money back guaranteed.
-                            </p>
+                            </p> -->
                         </div>
 
                         <a href="#" class="button--link button--flex">
@@ -140,31 +182,31 @@
             <section class="steps section container">
                 <div class="steps__bg">
                     <h2 class="section__title-center steps__title">
-                        Steps to start your <br> plants off right
+                        Adquiera su producto<br> en solo 3 pasos
                     </h2>
 
                     <div class="steps__container grid">
                         <div class="steps__card">
                             <div class="steps__card-number">01</div>
-                            <h3 class="steps__card-title">Choose Plant</h3>
+                            <h3 class="steps__card-title">Contáctenos</h3>
                             <p class="steps__card-description">
-                                We have several varieties plants you can choose from.
+                                Envíenos su pedido, con las especificaciones que usted desea.
                             </p>
                         </div>
 
                         <div class="steps__card">
                             <div class="steps__card-number">02</div>
-                            <h3 class="steps__card-title">Place an order</h3>
+                            <h3 class="steps__card-title">Obtenga su muestra gratis</h3>
                             <p class="steps__card-description">
-                                Once your order is set, we move to the next step which is the shipping.
+                                Chequee el producto, verifique nuestros altos estándares y ordene la compra.
                             </p>
                         </div>
 
                         <div class="steps__card">
                             <div class="steps__card-number">03</div>
-                            <h3 class="steps__card-title">Get plants delivered</h3>
+                            <h3 class="steps__card-title">Reciba el producto</h3>
                             <p class="steps__card-description">
-                                Our delivery process is easy, you receive the plant direct to your door.
+                                En el lugar del mundo que desee, todos los días del año.
                             </p>
                         </div>
                     </div>
@@ -174,35 +216,22 @@
             <!--==================== PRODUCTS ====================-->
             <section class="product section container" id="products">
                 <h2 class="section__title-center">
-                    Check out our <br> products
+                    Explorá nuestros <br> productos
                 </h2>
 
                 <p class="product__description">
-                    Here are some selected plants from our showroom, all are in excellent 
-                    shape and has a long life span. Buy and enjoy best quality.
+                    Nuestro proceso es único y está diseñado pensando en las máximas garantías de 
+                    calidad y seguridad alimentaria.
                 </p>
 
                 <div class="product__container grid">
                     <article class="product__card">
                         <div class="product__circle"></div>
 
-                        <img src="assets/img/product1.png" alt="" class="product__img">
+                        <img src="assets/img/Products_1.png" alt="" class="product__img">
 
-                        <h3 class="product__title">Cacti Plant</h3>
-                        <span class="product__price">$19.99</span>
-
-                        <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button>
-                    </article>
-
-                    <article class="product__card">
-                        <div class="product__circle"></div>
-
-                        <img src="assets/img/product2.png" alt="" class="product__img">
-
-                        <h3 class="product__title">Cactus Plant</h3>
-                        <span class="product__price">$11.99</span>
+                        <h3 class="product__title">Producto 1</h3>
+                        <span class="product__price">Ver más</span>
 
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
@@ -212,23 +241,10 @@
                     <article class="product__card">
                         <div class="product__circle"></div>
 
-                        <img src="assets/img/product3.png" alt="" class="product__img">
+                        <img src="assets/img/Products_2.png" alt="" class="product__img">
 
-                        <h3 class="product__title">Aloe Vera Plant</h3>
-                        <span class="product__price">$7.99</span>
-
-                        <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button>
-                    </article>
-
-                    <article class="product__card">
-                        <div class="product__circle"></div>
-
-                        <img src="assets/img/product4.png" alt="" class="product__img">
-
-                        <h3 class="product__title">Succulent Plant</h3>
-                        <span class="product__price">$5.99</span>
+                        <h3 class="product__title">Producto 2</h3>
+                        <span class="product__price">Ver más</span>
 
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
@@ -238,10 +254,10 @@
                     <article class="product__card">
                         <div class="product__circle"></div>
 
-                        <img src="assets/img/product5.png" alt="" class="product__img">
+                        <img src="assets/img/Products_3.png" alt="" class="product__img">
 
-                        <h3 class="product__title">Succulent Plant</h3>
-                        <span class="product__price">$10.99</span>
+                        <h3 class="product__title">Producto 3</h3>
+                        <span class="product__price">Ver más</span>
 
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
@@ -251,10 +267,36 @@
                     <article class="product__card">
                         <div class="product__circle"></div>
 
-                        <img src="assets/img/product6.png" alt="" class="product__img">
+                        <img src="assets/img/Products_4.png" alt="" class="product__img">
 
-                        <h3 class="product__title">Green Plant</h3>
-                        <span class="product__price">$8.99</span>
+                        <h3 class="product__title">Producto 4</h3>
+                        <span class="product__price">Ver más</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/Products_5.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Producto 5</h3>
+                        <span class="product__price">Ver más</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/Products_6.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Producto 6</h3>
+                        <span class="product__price">Ver más</span>
 
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
@@ -266,7 +308,7 @@
             <!--==================== QUESTIONS ====================-->
             <section class="questions section" id="faqs">
                 <h2 class="section__title-center questions__title container">
-                    Some common questions <br> were often asked
+                    Algunas consultas <br> que normalmente recibimos.
                 </h2>
 
                 <div class="questions__container container grid">
@@ -275,14 +317,16 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    My flowers are falling off or dying?
+                                    ¿Cuál es el origen de nuestro jugo de uva concentrado?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
+                                    El jugo de uva concentrado proviene del jugo natural exprimido directamente de las uvas de
+                                    nuestros viñedos. 
+                                    Es un jugo que se extrae durante las primeras etapas de la elaboración del vino, y con el 
+                                    que se inicia todo el proceso hasta la obtención del producto final.
                                 </p>
                             </div>
                         </div>
@@ -291,14 +335,16 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    What causes leaves to become pale?
+                                    ¿Cuál es la diferencia entre el vino y el jugo de uva concentrado?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
+                                    El concentrado de jugo de uva es la primera parte después de la prensa de uva, el jugo de
+                                    uva en sí mismo después de que se han cosechado las uvas. El vino, por su parte, es el
+                                    resultado de la fermentación alcohólica de este jugo de uva concentrado, además de otros
+                                    procedimientos para llegar al producto final.
                                 </p>
                             </div>
                         </div>
@@ -307,14 +353,14 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    What causes brown crispy leaves?
+                                    ¿Pueden visitarse las instalaciones?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
+                                    Por supuesto, tanto nuestros viñedos como nuestra bodega está 100% disponible para ser visitada
+                                    y recorrida en todo momento del año.
                                 </p>
                             </div>
                         </div>
@@ -325,14 +371,18 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    How do i choose a plant?
+                                    ¿Cómo transportamos nuestros productos?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
+                                    Mediante tambores de acero, bins de madera, así como grandes cargas en flexitanks, 
+                                    garantizamos la seguridad y conservación de las propiedades de la uva. Ofrecemos la 
+                                    posibilidad de enviar jugo de uva a granel o almacenarlos refrigerados y/o congelados 
+                                    en tambores, los cuales pueden ser transportados por vía aérea, terrestre o marítima. 
+                                    De esta forma, cada año somos elegidos como socio y proveedor de jugo de uva 
+                                    concentrado por quienes confían y comprueban nuestros altos estándares.
                                 </p>
                             </div>
                         </div>
@@ -341,14 +391,16 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    How do I change the pots?
+                                    ¿Qué nos diferencia de las grandes industrias?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
+                                    Desde el trato directo con los responsables de la empresa hasta la 
+                                    personalización máxima en las necesidades de nuestros clientes.  Trabajamos
+                                    codo a codo con quienes solicitan nuestros servicios porque no buscamos entregar un producto estándar, sino el producto deseado.
+                                    
                                 </p>
                             </div>
                         </div>
@@ -357,14 +409,14 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    Why are gnats flying around my plant?
+                                    ¿Qué tan fácil es obtener nuestros productos?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
+                                    Facilísimo, porque estamos a un mensaje de distancia. No sólo podés contactarnos por mail sino 
+                                    directamente al WhatsApp de quien comanda este emprendimiento.
                                 </p>
                             </div>
                         </div>
@@ -377,23 +429,23 @@
                 <div class="contact__container grid">
                     <div class="contact__box">
                         <h2 class="section__title">
-                            Reach out to us today <br> via any of the given <br> information
+                            Contactanos hoy <br> a través de cualquiera de <br> los siguientes canales
                         </h2>
 
                         <div class="contact__data">
                             <div class="contact__information">
-                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <h3 class="contact__subtitle">Llamanos para soporte inmediato</h3>
                                 <span class="contact__description">
                                     <i class="ri-phone-line contact__icon"></i>
-                                    +999 888 777
+                                    +54 261 353-5337
                                 </span>
                             </div>
 
                             <div class="contact__information">
-                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <h3 class="contact__subtitle">O escribinos un e-mail</h3>
                                 <span class="contact__description">
                                     <i class="ri-mail-line contact__icon"></i>
-                                    user@email.com
+                                    aleytes@raicessrl.com
                                 </span>
                             </div>
                         </div>
@@ -408,17 +460,17 @@
 
                             <div class="contact__content">
                                 <input type="text" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label">Subject</label>
+                                <label for="" class="contact__label">Tema</label>
                             </div>
 
                             <div class="contact__content contact__area">
                                 <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
-                                <label for="" class="contact__label">Message</label>
+                                <label for="" class="contact__label">Mensaje</label>
                             </div>
                         </div>
 
                         <button class="button button--flex">
-                            Send Message
+                            Enviar mensaje
                             <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
                     </form>
@@ -431,38 +483,39 @@
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
-                        <i class="ri-leaf-line footer__logo-icon"></i> Plantex
+                        Pie Franco
+                        <!-- <i class="fa-duotone fa-grapes footer__logo-icon"></i> Pie Franco -->
                     </a>
 
                     <h3 class="footer__title">
-                        Subscribe to our newsletter <br> to stay update
+                        Suscribite a nuestro newsletter <br> para mantenerte actualizado
                     </h3>
 
                     <div class="footer__subscribe">
                         <input type="email" placeholder="Enter your email" class="footer__input">
 
                         <button class="button button--flex footer__button">
-                            Subscribe
+                            Suscribirse
                             <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
                     </div>
                 </div>
 
                 <div class="footer__content">
-                    <h3 class="footer__title">Our Address</h3>
+                    <h3 class="footer__title">Nuestra dirección</h3>
 
                     <ul class="footer__data">
-                        <li class="footer__information">1234 - Peru</li>
-                        <li class="footer__information">La Libertad - 43210</li>
-                        <li class="footer__information">123-456-789</li>
+                        <li class="footer__information">Completar con dirección 1</li>
+                        <li class="footer__information">Completar con dirección 2</li>
+                        <li class="footer__information">Completar con dirección 3</li>
                     </ul>
                 </div>
 
                 <div class="footer__content">
-                    <h3 class="footer__title">Contact Us</h3>
+                    <h3 class="footer__title">Escribinos</h3>
 
                     <ul class="footer__data">
-                        <li class="footer__information">+999 888 777</li>
+                        <li class="footer__information">+54 261 353-5337</li>
                         
                         <div class="footer__social">
                             <a href="https://www.facebook.com/" class="footer__social-link">
@@ -472,13 +525,13 @@
                                 <i class="ri-instagram-line"></i>
                             </a>
                             <a href="https://twitter.com/" class="footer__social-link">
-                                <i class="ri-twitter-fill"></i>
+                                <i class="ri-linkedin-fill"></i>
                             </a>
                         </div>
                     </ul>
                 </div>
 
-                <div class="footer__content">
+                <!-- <div class="footer__content">
                     <h3 class="footer__title">
                         We accept all credit cards
                     </h3>
@@ -489,10 +542,10 @@
                         <img src="assets/img/card3.png" alt="" class="footer__card">
                         <img src="assets/img/card4.png" alt="" class="footer__card">
                     </div>
-                </div>
+                </div> -->
             </div>
 
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+            <p class="footer__copy">&#169; Persia Roque. All rigths reserved</p>
         </footer>
         
         <!--=============== SCROLL UP ===============-->
@@ -505,5 +558,25 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <!--=============== SLIDE JS ===============-->
+        <script scr="assets/js/slide.js"></script>
+
+        <script>
+            let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+        </script>
+
     </body>
 </html>
