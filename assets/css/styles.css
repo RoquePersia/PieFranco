@@ -333,7 +333,7 @@ the website, in dark theme
   display: flex;
   max-width: 1400px;
   margin: 0 auto;
-  
+  overflow: hidden;
   
 
 }
@@ -978,6 +978,8 @@ the website, in dark theme
 
 }
 
+
+
 @media screen and (min-width: 767px){
   body{
     margin: 0;
@@ -990,6 +992,8 @@ the website, in dark theme
     /* column-gap: 3rem; */
     justify-content:center;
     gap: 3rem;
+    font-size: 15px;
+    padding-right: 50px;
   }
   .nav__toggle,
   .nav__close{
@@ -1040,7 +1044,46 @@ the website, in dark theme
 @media (min-width: 1200px){
   .home{
     padding: 10rem 0 5rem;
-    
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px){
+  .button--hide{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .nav{
+    font-size: 20px;
+  }
+
+  .home{
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+  }
+  .home__social{
+    right: -3rem;
+    row-gap: 4.5rem;
+  }
+  .home__social-follow{
+    font-size: var(--small-font-size);
+  }
+  .home__social-follow::after{
+    width: 1.5rem;
+    right: -60%;
+  }
+  .home__social-link{
+    font-size: 1.15rem;
+  }
+
+  .about__container{
+    column-gap: 7rem;
+  }
+
+  .scrollup{
+    right: 3rem;
   }
 }
 
@@ -1127,36 +1170,6 @@ the website, in dark theme
   }
   .footer__copy{
     margin: 7rem 0 2rem;
-  }
-}
-
-@media screen and (min-width: 1200px){
-  .home{
-    min-height: 100vh;
-    min-height: fill-available;
-    min-height: -webkit-fill-available;
-  }
-  .home__social{
-    right: -3rem;
-    row-gap: 4.5rem;
-  }
-  .home__social-follow{
-    font-size: var(--small-font-size);
-  }
-  .home__social-follow::after{
-    width: 1.5rem;
-    right: -60%;
-  }
-  .home__social-link{
-    font-size: 1.15rem;
-  }
-
-  .about__container{
-    column-gap: 7rem;
-  }
-
-  .scrollup{
-    right: 3rem;
   }
 }
 
