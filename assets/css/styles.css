@@ -15,7 +15,7 @@
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: hsl(var(--hue), 0%, 100%);
+  --body-color: #F8F8F8;
   --container-color: #FFF;
 
   /*========== Font and typography ==========*/
@@ -131,6 +131,8 @@ body.dark-theme{
 }
 
 .nav__btns{
+  position: absolute;
+  right: 40px;
   display: inline-flex;
   align-items: center;
   column-gap: 1rem;
@@ -172,7 +174,7 @@ the website, in dark theme
 }
 
 .container{
-  max-width: 968px;
+  /* max-width: 1200px; */
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -187,12 +189,22 @@ the website, in dark theme
 
 /*=============== HEADER ===============*/
 .header{
-  width: 100%;
-  background-color: var(--body-color);
-  position: fixed;
-  top: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1.2em;
   left: 0;
-  z-index: var(--z-fixed);
+  right: 0;
+  background-color: #DAC9B6;
+  position: fixed;
+  margin-top: 10px;
+  left: 10px;
+  right: 10px;
+  border-radius: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  top: 20px;
+
+  z-index: 100;
   transition: .4s; /*For animation dark mode*/
 }
 
@@ -200,18 +212,19 @@ the website, in dark theme
 .nav{
   height: var(--header-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .header__logo{
   display: flex;
-  align-items: flex-end;
-  height: 100%;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
 }
 
-.img__logo{
+/* .img__logo{
   height: 80%;
-}
+} */
 
 
 
@@ -225,8 +238,9 @@ the website, in dark theme
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -1px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: .5rem;
   transition: .3s;
 }
@@ -313,13 +327,41 @@ the website, in dark theme
 }
 
 /*=============== HOME ===============*/
-/* .home{
+.home{
   padding: 3.5rem 0 2rem;
   min-height: 100vh;
   display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  
   
 
-} */
+}
+
+.home::before{
+  content:"";
+  background-image: url(../img/Portada.png);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.home::after{
+  content:"";
+  background-image: url(../img/decor-section-bottom.webp);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 2;
+    background-position: 100% 50%;
+    background-size: auto 102%;
+    width: 100%;
+    padding-bottom: 10%;
+}
 
 .home__container{
   position: relative;
@@ -335,8 +377,15 @@ the website, in dark theme
 }
 
 .home__title{
+  font-family: 'Noto Serif Toto', serif;
   font-size: var(--big-font-size);
   line-height: 140%;
+
+}
+
+.home__title__mod{
+  display: inline-block;
+  translate:15%;
   margin-bottom: var(--mb-1);
 }
 
@@ -426,6 +475,9 @@ the website, in dark theme
 }
 
 /*=============== ABOUT ===============*/
+/* .about{
+  background-color: var(--first-color-lighten);
+} */
 .about__container{
   row-gap: 2rem;
 }
@@ -931,8 +983,12 @@ the website, in dark theme
   }
 
   .nav{
+
+    display: flex;
     height: calc(var(--header-height) + 1.5rem);
-    column-gap: 3rem;
+    /* column-gap: 3rem; */
+    justify-content:center;
+    gap: 3rem;
   }
   .nav__toggle,
   .nav__close{
@@ -943,7 +999,9 @@ the website, in dark theme
     column-gap: 3rem;
   }
   .nav__menu{
-    margin-left: auto;
+    /* margin-left: auto; */
+    display: flex;
+    justify-content: center;
   }
 
   .home__container,
@@ -981,17 +1039,15 @@ the website, in dark theme
 @media (min-width: 1200px){
   .home{
     padding: 10rem 0 5rem;
-    background-image: url(../img/Home_back3.png);
-    background-repeat: no-repeat;
-    background-size:cover;
+    
   }
 }
 
 /* For large devices */
 @media screen and (min-width: 992px){
   .container{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .section{
