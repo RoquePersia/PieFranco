@@ -328,8 +328,8 @@ the website, in dark theme
 
 /*=============== HOME ===============*/
 .home{
-  padding: 3.5rem 0 2rem;
-  min-height: 100vh;
+  padding: .5rem 0 2rem;
+  height: 100vh;
   display: flex;
   max-width: 1400px;
   margin: 0 auto;
@@ -975,6 +975,7 @@ the website, in dark theme
   .footer__subscribe{
     width: 400px;
   }
+
 }
 
 @media screen and (min-width: 767px){
@@ -1130,11 +1131,11 @@ the website, in dark theme
 }
 
 @media screen and (min-width: 1200px){
-  /* .home{
+  .home{
     min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available;
-  } */
+  }
   .home__social{
     right: -3rem;
     row-gap: 4.5rem;
