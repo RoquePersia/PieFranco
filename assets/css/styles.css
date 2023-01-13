@@ -1051,6 +1051,10 @@ the website, in dark theme
   .button--hide{
     display: none;
   }
+
+  .home{
+    height: 100vh;
+  }
 }
 
 @media screen and (min-width: 1200px){
