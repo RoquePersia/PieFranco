@@ -53,17 +53,21 @@
                         <li class="nav__item">
                             <a href="#products" class="nav__link">PRODUCTOS</a>
                         </li>
+                    </ul>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">CONTACTANOS</a>
                         </li>
                     </ul>
-
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
                 </div>
 
+                
                 <div class="nav__btns">
+                    <!-- <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div> -->
                     <!-- Theme change button -->
                     <i class="ri-moon-line change-theme" id="theme-button"></i>
 
@@ -115,48 +119,48 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <!-- <section class="about section container" id="about">
+            <section class="about section container" id="about">
                 <div class="about__container grid">
                     
-                    <div class="about__img">
+                    <div class="about__img" id="img">
                         
                         <div class="slideshow-container">
 
                             <div class="mySlides fade">
-                              <div class="numbertext">1 / 3</div>
-                              <img src="./assets/img/Slide_uva.png" style="width:100%">
+                              
+                              <img class="slide" src="./assets/img/Slide_uva.png" style="width:100%">
                               <div class="text">Nuestra materia prima</div>
                             </div>
                             
                             <div class="mySlides fade">
-                              <div class="numbertext">2 / 3</div>
-                              <img src="./assets/img/Slide_dueña.png" style="width:100%">
+                            
+                              <img class="slide" src="./assets/img/Slide_dueña.png" style="width:100%">
                               <div class="text">Nuestros viñedos</div>
                             </div>
                             
                             <div class="mySlides fade">
-                              <div class="numbertext">3 / 3</div>
-                              <img src="./assets/img/Slide_vaso.png" style="width:100%">
+                              
+                              <img class="slide" src="./assets/img/Slide_vaso.png" style="width:100%">
                               <div class="text">Single Strength</div>
                             </div>
                             
-                            <a class="prev" onclick="plusSlides(-1)">❮</a>
-                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a> -->
                             
                             </div>
-                            <br>
+                            <!-- <br> -->
                             
-                            <div style="text-align:center">
+                            <!-- <div style="text-align:center">
                               <span class="dot" onclick="currentSlide(1)"></span> 
                               <span class="dot" onclick="currentSlide(2)"></span> 
                               <span class="dot" onclick="currentSlide(3)"></span> 
-                            </div>
+                            </div> -->
                     </div>
                    
                     
 
                     <div class="about__data">
-                        <h2 class="section__title about__title">
+                        <h2 class="section__title about__title" id="coso">
                             Quiénes somos & <br> por qué elegirnos
                         </h2>
 
@@ -188,7 +192,36 @@
                         </a>
                     </div>
                 </div>
-            </section> -->
+            </section>
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__welcome">
+                    <div class="text__welcome">
+                        <h1 class="titulo__story">Bienvenido a Raíces</h1>
+                        <p>Somos una empresa familiar con más de 50 años de experiencia en el rubro 
+               50             vitivinícola y 3 generaciones de profesionales que aman su tierra y su actividad.</p>
+                        <p>Ofrecemos productos de calidad, con la adaptabilidad que nos otorga ser una
+                            empresa mediana conducida por sus dueños.</p>
+                    </div>
+                    <img class="img__welcome" src="../assets/img/julian-soler-proceso-00.jpg" alt="">
+                    <!-- <figure class="fig__welcome">
+                        <img src="../assets/img/julian-soler-proceso-00.jpg" alt="">
+                    </figure> -->
+                    
+                </div>
+                <div class="story__wide">
+                    <div class="bg__wide">
+                        <div class="bg__text">
+                            <h1 class="wide__title">Hola, qué onda que no me veo en ningún lado</h1>
+                            <!-- <img class="img__wide" src="../assets/img/Portada_seccion2.png" alt=""> -->
+                            <p class="wide__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium itaque, ut eos saepe laudantium voluptate minima quis blanditiis exercitationem quasi, ullam alias sequi. Perferendis aliquid excepturi magni numquam fugit quas!</p>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
 
             <!--==================== STEPS ====================-->
             <section class="steps section container">
@@ -574,7 +607,7 @@
         <script scr="assets/js/slide.js"></script>
 
         <script>
-            let slideIndex = 0;
+        let slideIndex = 0;
 showSlides();
 
 function showSlides() {
