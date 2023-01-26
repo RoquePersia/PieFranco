@@ -1239,8 +1239,16 @@ the website, in dark theme
 
 @media screen and (max-width: 991px){
 
+  .home__container{
+    row-gap: 0;
+  }
+
   .home__title{
     font-size: 2rem;
+  }
+
+  .home__description{
+    font-size: 0.8rem;
   }
   .story__welcome{
     flex-direction: column-reverse;
