@@ -1260,6 +1260,10 @@ the website, in dark theme
   .bg__text{
     width: 60%;
   }
+
+  .wide__title{
+    font-size: 2rem;
+  }
 }
 
 /* For large devices */
