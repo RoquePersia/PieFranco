@@ -539,7 +539,6 @@ the website, in dark theme
 .story__welcome{
   display: flex;
   max-width: 1200px;
-  min-width: 700px;
   height: 50%;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -1252,7 +1251,7 @@ the website, in dark theme
 
   .text__welcome{
     display: grid;
-    min-width: none;
+    min-width: 30px;
     width: 80%;
     margin: 0 auto;
     gap: 10px;
@@ -1292,6 +1291,9 @@ the website, in dark theme
     width: 380px;
   } */
 
+  .story__welcome{
+    min-width: 700px;
+  }
   .steps__container{
     grid-template-columns: repeat(3, 1fr);
   }
