@@ -1238,6 +1238,10 @@ the website, in dark theme
 }
 
 @media screen and (max-width: 991px){
+
+  .home__title{
+    font-size: 2rem;
+  }
   .story__welcome{
     flex-direction: column-reverse;
     justify-content: center;
