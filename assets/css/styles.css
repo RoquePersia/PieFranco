@@ -583,7 +583,7 @@ the website, in dark theme
 
 .bg__wide{
  height: 600px;
- 
+ overflow: hidden;
 }
 
 .bg__text{
@@ -594,11 +594,13 @@ the website, in dark theme
   position: absolute;
   left: 40px;
   bottom: 40px;
+  overflow: hidden;
 }
 
 .wide__title{
   color:#bbb;
   font-size: 3rem;
+  overflow: hidden;
 }
 
 
@@ -1240,6 +1242,7 @@ the website, in dark theme
   .story__welcome{
     flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
   }
 
   .img__welcome{
@@ -1249,9 +1252,14 @@ the website, in dark theme
 
   .text__welcome{
     display: grid;
+    min-width: none;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     gap: 10px;
+  }
+
+  .bg__text{
+    width: 60%;
   }
 }
 
