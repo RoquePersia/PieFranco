@@ -393,6 +393,7 @@ the website, in dark theme
   font-family: 'Noto Serif Toto', serif;
   font-size: 3rem;
   line-height: 140%;
+  
 
 }
 
@@ -541,7 +542,7 @@ the website, in dark theme
   max-width: 1200px;
   height: 50%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 9rem;
 }
 
 .text__welcome{
@@ -571,6 +572,7 @@ the website, in dark theme
   content:"";
   background-image: url(../img/Portada_seccion2_alt.png);
   background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -581,7 +583,7 @@ the website, in dark theme
 }
 
 .bg__wide{
- height: 600px;
+ height: 800px;
  overflow: hidden;
 }
 
@@ -597,9 +599,15 @@ the website, in dark theme
 }
 
 .wide__title{
-  color:#bbb;
+  font-family: 'Unbounded', cursive;
+  color: #F8F8F8;
   font-size: 3rem;
   overflow: hidden;
+  border-left: solid;
+  border-width: 4px;
+  border-color: #F8F8F8;
+  padding-left: 15px;
+  font-weight: 300;
 }
 
 
@@ -610,6 +618,226 @@ the website, in dark theme
   translate: -140px;
 } */
 
+/*=============== Tercera parte ===============*/
+
+.big__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  justify-content: center;
+  align-items: center;
+  padding: 10em 0;
+}
+.container_alt {
+  /* margin-top: 100px; */
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1367px;
+  /* justify-content: center;
+  align-content: center; */
+}
+
+.container_front{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.banner{
+  height: 269px;
+  width: 100%;
+  position: relative;
+  /* padding: 10.25rem 0; */
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  /* overflow: hidden; */
+}
+
+.banner_text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.banner_img{
+  z-index: -2;
+}
+
+.image_vina{
+  width: 56%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  display: inline-block;
+  left: auto;
+  right:0;
+}
+
+.image_vina_2{
+  height: 100%;
+  position: absolute;
+  width: 49%;
+  z-index: -4;
+  object-fit:cover;
+  background-position: 50px;
+}
+
+.title_banner_h2{
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 269px;
+  color: #F8F8F8;
+  font-size: 4rem;
+  overflow: hidden;
+  border-left: solid;
+  border-width: 7px;
+  border-color: #F8F8F8;
+  padding-left: 15px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.text_banner_p{
+  display: inline-block;
+  width: 40%;
+  font-size: 1.2rem;
+}
+
+.text_title_h2{
+  font-family: 'Unbounded', cursive;
+  font-size: 2rem;
+}
+/*=============== Cuarta parte ===============*/
+
+
+.big__container_story{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #606D5D;
+  margin-bottom: 19rem;
+  justify-content: center;
+}
+
+.img_mountains_green{
+  width: 100%;
+  position: relative;
+  bottom: -7px;
+}
+
+.container_adjust_width{
+  max-width: 1500px;
+  display: flex;
+}
+
+.container_img_story{
+  width: 65%;
+  position: relative;
+}
+
+.container_text_story{
+  padding-top: 3rem;
+  padding-right: 4rem;
+  width: 35%;
+}
+
+.worker_f{
+  position: absolute;
+  left:30%;
+  bottom: -250px;
+  width: 60%;
+  filter: grayscale(0%);
+  transition:1s;
+}
+
+
+.worker_h{
+  display: flex;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  filter: grayscale(100%);
+  transition:1s;
+}
+
+.worker_h:hover{
+  filter: grayscale(0%);
+  transition:1s;
+}
+
+.story_title{
+  font-family: 'Unbounded', cursive;
+  font-size: 2rem;
+  color: #F8F8F8;
+  border-left: solid;
+  border-width: 4px;
+  border-color: #F8F8F8;
+  padding-left: 10px;
+}
+
+.story_text{
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  color: white;
+}
+
+/*=============== Quinta parte ===============*/
+
+.big_container_mza{
+  background-color: #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 5%;
+}
+
+.container_mza{
+  width: fit-content;
+  height: 100%;
+  width: 40%;
+}
+
+.container_img_mza{
+  width: fit-content;
+}
+
+.container_text_mza{
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  line-height: 2rem;
+  width: 40%;
+  height: 100%;
+}
+
+.text_mza_title{
+  font-family: 'Unbounded', cursive;
+  font-size:2rem;
+  margin-bottom: 2rem;
+  border-left: solid;
+  border-width: 4px;
+  padding-left: 10px;
+}
+
+.worker_mza{
+}
 /*=============== STEPS ===============*/
 .steps__bg{
   background-color: var(--first-color);
@@ -1154,6 +1382,10 @@ the website, in dark theme
   .home{
     height: 100vh;
   }
+
+  .text_title_h2{
+    font-size: 1.2rem;
+  }
 }
 
 /* @media screen and (min-width: 1200px){
@@ -1276,6 +1508,54 @@ the website, in dark theme
   .wide__title{
     font-size: 2rem;
   }
+
+  .big__container_story{
+    margin-bottom: 8rem;
+
+  }
+
+  .container_adjust_width{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container_img_story{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .worker_h{
+    display: flex;
+    width: 100%;
+    aspect-ratio: 19/10;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+
+  }
+
+  
+
+  .worker_f{
+    display: flex;
+    left: 10%;
+    position: absolute;
+    bottom: -100px;
+    width: 80%;
+    height: 40%;
+    object-fit: cover;
+  }
+
+ 
+
+  .container_text_story{
+    padding-top: 9rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    width: 100%;
+  }
 }
 
 /* For large devices */
@@ -1364,6 +1644,17 @@ the website, in dark theme
   }
   .footer__copy{
     margin: 7rem 0 2rem;
+  }
+
+  .worker_h{
+    display: flex;
+    aspect-ratio: 19/14;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    width: 80%;
+    left: 40px;
+    margin: auto;
   }
 }
 
