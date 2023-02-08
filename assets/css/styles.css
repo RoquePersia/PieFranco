@@ -531,6 +531,15 @@ the website, in dark theme
 
 /*=============== STORY ===============*/
 /*=============== Primera parte ===============*/
+.titulo__story{
+    font-family: 'Unbounded', cursive;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-left: solid;
+    border-width: 4px;
+    padding-left: 10px;
+}
+
 .story{
   display: block;
   margin: 0 auto;
@@ -1473,7 +1482,11 @@ the website, in dark theme
 @media screen and (max-width: 991px){
 
   .section {
-    padding: 0;
+    padding-top: 0;
+}
+.home{
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
   .home__container{
@@ -1491,6 +1504,7 @@ the website, in dark theme
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
   }
 
   .img__welcome{
