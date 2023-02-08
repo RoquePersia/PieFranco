@@ -1482,10 +1482,9 @@ the website, in dark theme
 @media screen and (max-width: 991px){
 
   .section {
-    padding-top: 0;
+
 }
 .home{
-  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -1601,6 +1600,10 @@ the website, in dark theme
 }
 
 @media screen and (max-width: 576px){
+  .section {
+    padding-top: 0;
+}
+
   .image_vina{
     height: 400px;
   }
