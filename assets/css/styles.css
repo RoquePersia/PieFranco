@@ -556,6 +556,7 @@ the website, in dark theme
   width: 60%;
   min-width: 700px;
   background-size:cover;
+  background-position: center;
 }
 
 /*=============== Segunda parte ===============*/
@@ -1384,7 +1385,7 @@ the website, in dark theme
   }
 
   .text_title_h2{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1489,8 +1490,8 @@ the website, in dark theme
   }
 
   .img__welcome{
-    margin: 0 auto;
     margin-bottom: 40px;
+    background-position: center;
   }
 
   .text__welcome{
@@ -1548,6 +1549,24 @@ the website, in dark theme
     object-fit: cover;
   }
 
+  .big__container_story{
+    margin-bottom: 0;
+  }
+
+  .big_container_mza{
+    flex-direction: column-reverse;
+  }
+
+  .container_text_mza{
+    padding-top: 2rem;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .text_mza_p{
+    font-size: 1.2rem;
+  }
+
  
 
   .container_text_story{
@@ -1556,6 +1575,42 @@ the website, in dark theme
     padding-left: 4rem;
     width: 100%;
   }
+  .container_mza {
+    width: fit-content;
+    height: 100%;
+    /* width: 40%; */
+}
+}
+
+@media screen and (max-width: 576px){
+  .image_vina{
+    height: 400px;
+  }
+
+  .title_banner_h2{
+    font-size: 2rem;
+  }
+
+  .banner_text{
+    padding-top: 100px;
+  }
+  .text_banner_p{
+    padding-right: 8px;
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .worker_f{
+    display: flex;
+    left: 10%;
+    position: absolute;
+    bottom: -50px;
+    width: 80%;
+    height: 40%;
+    object-fit: cover;
+  }
+
 }
 
 /* For large devices */
