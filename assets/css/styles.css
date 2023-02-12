@@ -113,7 +113,6 @@ a{
 }
 
 img{
-  max-width: 100%;
   height: auto;
 }
 
@@ -228,12 +227,11 @@ the website, in dark theme
   width: 300px;
   height:fit-content;
   justify-content: center;
-  margin-top: 20px;
 }
 
-/* .img__logo{
-  height: 80%;
-} */
+.img__logo{
+  width: 230px;
+}
 
 
 
@@ -1092,6 +1090,102 @@ the website, in dark theme
   transform: translateY(-.5rem);
 }
 
+/*=============== CONTENEDORES ===============*/
+
+.cont_container{
+  display: flex;
+  flex-direction: column;
+}
+
+.cont_lone_container{
+  width: 100%;
+  height: 20rem;
+  transition: 1s;
+}
+
+.flexi_lone{
+  background-image: url(../img/flexi_2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bin_lone{
+  background-image: url(../img/bin_2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tacho_lone{
+  background-image: url(../img/tacho_2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img_lone{
+  width: 100%;
+  height: 100%;
+}
+
+.cont_text_container{
+  position: relative;
+  height: 100%;
+}
+
+.cont_text{
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 269px;
+  color: white;
+  font-size: 4rem;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cont_text_info{
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.text_bin, .bin_info{
+  color: black;
+}
+
+.cont_lone_container:hover{
+  filter: brightness(0.8);
+  transition:1s;
+}
+
+.cont_lone_container:hover .cont_text{
+  display: none;
+  transition:1s;
+}
+
+.cont_lone_container:hover .cont_text_info{
+  visibility: visible;
+  filter: brightness(1);
+  transition:1s;
+}
+
 /*=============== QUESTIONS ===============*/
 .questions{
   background-color: var(--first-color-lighten);
@@ -1518,42 +1612,7 @@ the website, in dark theme
     font-size: 20px;
   }
 }
-@media screen and (max-width: 767px){
-  .button--hide{
-    display: none;
-  }
 
-  .home{
-    height: 100vh;
-  }
-
-  .text_title_h2{
-    font-size: 1.8rem;
-  }
-
-  .big_container_autumn{
-    position: relative;
-    width: 100%;
-    max-width: 1500px;
-    padding: 0rem 0rem;
-    margin: 0 auto;
-  }
-
-
-  .autumn_title{
-    font-size: 4rem;
-  }
-
-  .autumn_p{
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .autumn_img{
-    height: 800px;
-    object-fit: cover;
-  }
-}
 
 /* @media screen and (min-width: 1200px){
   .nav{
@@ -1754,6 +1813,51 @@ the website, in dark theme
     height: 100%;
     /* width: 40%; */
 }
+
+.img__logo{
+  width: 120px;
+}
+}
+
+@media screen and (max-width: 767px){
+  .button--hide{
+    display: none;
+  }
+
+  .home{
+    height: 100vh;
+  }
+
+  .text_title_h2{
+    font-size: 1.8rem;
+  }
+
+  .big_container_autumn{
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0rem 0rem;
+    margin: 0 auto;
+  }
+
+
+  .autumn_title{
+    font-size: 4rem;
+  }
+
+  .autumn_p{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .autumn_img{
+    height: 800px;
+    object-fit: cover;
+  }
+
+  .img__logo{
+    width: 170px;
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -1800,6 +1904,10 @@ the website, in dark theme
 
   .right_text{
     visibility: hidden;
+  }
+
+  .tambores_info{
+    font-size: 0.9rem;
   }
 
 }
