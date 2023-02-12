@@ -1872,6 +1872,9 @@ the website, in dark theme
   .img__logo{
     width: 170px;
   }
+  .right_text_title{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px){
