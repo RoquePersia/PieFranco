@@ -608,8 +608,9 @@ the website, in dark theme
 
 .wide__title{
   font-family: 'Unbounded', cursive;
+  font-weight: 600;
   color: #F8F8F8;
-  font-size: 3rem;
+  font-size: 4.5rem;
   overflow: hidden;
   border-left: solid;
   border-width: 4px;
@@ -1184,6 +1185,19 @@ the website, in dark theme
   visibility: visible;
   filter: brightness(1);
   transition:1s;
+}
+
+.contenedores_title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
+  line-height: 140%;
+}
+
+.description_contenedor{
+  margin-bottom: var(--mb-1-5);
 }
 
 /*=============== QUESTIONS ===============*/
@@ -1862,7 +1876,7 @@ the website, in dark theme
 
 @media screen and (max-width: 576px){
   .section {
-    padding-top: 0;
+    padding-top: 3rem;
 }
 
   .image_vina{
