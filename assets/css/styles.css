@@ -285,7 +285,6 @@ the website, in dark theme
   .home__img{
     width: 200px;
   }
-
 }
 
 .nav__close{
@@ -352,8 +351,12 @@ the website, in dark theme
 
 .home::before{
   content:"";
+<<<<<<< HEAD
   background-image: url(../img/img-portada-1.jpg);
   background-color:gainsboro;
+=======
+  background-image: url(../img/Portada.png);
+>>>>>>> parent of 1eab420 (Dale, subilo)
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -753,7 +756,7 @@ the website, in dark theme
   display: flex;
   flex-direction: column;
   background-color: #606D5D;
-  padding-bottom: 19rem;
+  margin-bottom: 19rem;
   justify-content: center;
 }
 
@@ -1078,74 +1081,17 @@ the website, in dark theme
 }
 
 /*=============== PRODUCTS ===============*/
-.section.product{
-  padding: 0;
-  margin: 0;
-}
-
-.products__ours {
-  position: absolute;
-  width: 700px;
-  left: 50%;
-  top: 150px;
-  transform: translate(-50%);
-  text-align: center;
-  transition: 0.8s;
-  background-color: transparent;
-  opacity: 0.9;
-  backdrop-filter: blur(40px);
-  /* border: 1px solid white; */
-  padding: 1rem;
-  border-radius: 25px;
-
-}
-
-.products__ours h3,
-.products__ours p {
-  color: white;
-  margin: 0;
-}
-
-
-
-
-.product__section{
-  margin: 4rem 0;
-  position: relative;
-}
-
-.products__title{
-  font-size: 4rem;
-}
-
-.container.product{
-  max-width: 100%;
-}
-
-.product{
-  background-color: black;
-}
-
-.product__background {
-  position: absolute;
-
-    width: 100vw;
-    height:600px;
-    object-fit: cover;
-}
-
 .product__description{
   text-align: center;
 }
 
-.product__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2.5rem 3rem;
+.product__container{
   padding: 3rem 0;
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 3rem;
 }
 
+<<<<<<< HEAD
 .product__card {
   display: flex;
   flex-direction: column;
@@ -1180,15 +1126,34 @@ the website, in dark theme
 
 
 
+=======
+.product__card{
+  display: grid;
+  position: relative;
+}
+
+.product__img{
+  position: relative;
+  width: 120px;
+  justify-self: center;
+  margin-bottom: var(--mb-0-75);
+  transition: .3s;
+}
+
+>>>>>>> parent of 1eab420 (Dale, subilo)
 .product__title,
 .product__price{
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
+<<<<<<< HEAD
   color: black;
 }
 
 .product__add{
   font-size: 0.8rem;
+=======
+  color: var(--title-color);
+>>>>>>> parent of 1eab420 (Dale, subilo)
 }
 
 .product__title{
@@ -1220,21 +1185,8 @@ the website, in dark theme
   left: 5%;
 }
 
-.product__card:hover .product__img,
-.product__card:hover .button__product,
-.product__card:hover .product__pdf
-{
+.product__card:hover .product__img{
   transform: translateY(-.5rem);
-}
-
-.product__pdf{
-  position: absolute;
-  bottom: 5px;
-  transition: 0.6s;
-}
-
-.img__pdf{
-  width: 35px;
 }
 
 /*=============== CONTENEDORES ===============*/
@@ -1977,12 +1929,6 @@ the website, in dark theme
 .img__logo{
   width: 120px;
 }
-
-.product__container{
-  gap: 10rem;
-  padding-top: 20rem;
-  grid-template-columns: repeat(1, 185px);
-}
 }
 
 @media screen and (max-width: 767px){
@@ -2026,9 +1972,6 @@ the website, in dark theme
   }
   .right_text_title{
     display: none;
-  }
-  .products__ours{
-    width: 400px;
   }
 }
 
@@ -2082,22 +2025,6 @@ the website, in dark theme
     font-size: 0.9rem;
   }
 
-  
-
-}
-
-@media (max-width: 400px) {
-  .product__container {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
-
-  .products__ours{
-    width: 300px;
-  }
-
-  .products__ours h3{
-    font-size: 3rem;
-  }
 }
 
 /* For large devices */
@@ -2108,7 +2035,7 @@ the website, in dark theme
   } */
 
   .section{
-    padding-top: 4rem;
+    padding: 8rem 0 1rem;
   }
   .section__title,
   .section__title-center{
@@ -2147,12 +2074,11 @@ the website, in dark theme
   }
   .product__container{
     padding: 4rem 0;
-    padding-top: 20rem;
-    grid-template-columns: repeat(2, 185px);
-    gap: 4rem 15rem;
+    grid-template-columns: repeat(3, 185px);
+    gap: 4rem 6rem;
   }
   .product__img{
-   
+    width: 160px;
   }
   .product__circle{
     width: 110px;
