@@ -118,80 +118,7 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <!-- <section class="about section container" id="about">
-                <div class="about__container grid">
-                    
-                    <div class="about__img" id="img">
-                        
-                        <div class="slideshow-container">
-
-                            <div class="mySlides fade">
-                              
-                              <img class="slide" src="./assets/img/Slide_uva.png" style="width:100%">
-                              <div class="text">Nuestra materia prima</div>
-                            </div>
-                            
-                            <div class="mySlides fade">
-                            
-                              <img class="slide" src="./assets/img/Slide_dueña.png" style="width:100%">
-                              <div class="text">Nuestros viñedos</div>
-                            </div>
-                            
-                            <div class="mySlides fade">
-                              
-                              <img class="slide" src="./assets/img/Slide_vaso.png" style="width:100%">
-                              <div class="text">Single Strength</div>
-                            </div>
-                            
-                            <a class="prev" onclick="plusSlides(-1)">❮</a>
-                            <a class="next" onclick="plusSlides(1)">❯</a>
-                            
-                            </div>
-                            <br>
-                            
-                            <div style="text-align:center">
-                              <span class="dot" onclick="currentSlide(1)"></span> 
-                              <span class="dot" onclick="currentSlide(2)"></span> 
-                              <span class="dot" onclick="currentSlide(3)"></span> 
-                            </div>
-                    </div>
-                   
-                    
-
-                    <div class="about__data">
-                        <h2 class="section__title about__title" id="coso">
-                            Quiénes somos & <br> por qué elegirnos
-                        </h2>
-
-                        <p class="about__description">
-                            Somos una empresa familiar con más de 50 años de experiencia en el rubro 
-                            vitivinícola y 3 generaciones de profesionales que aman su tierra y su actividad.
-                        </p>
-
-                        <div class="about__details">
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Ofrecemos productos de calidad, con la adaptabilidad que nos otorga ser una
-                                empresa mediana conducida por sus dueños.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Brindamos una atención distinguida y personalizada a nuestros clientes.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Crecemos día a día a partir de tres pilares fundamentales: Calidad, Puntualidad
-                                 y Precios Competitivos.
-                            </p>
-                            
-                        </div>
-
-                        <a href="#" class="button--link button--flex">
-                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </section> -->
+           
             <!--==================== STORY ====================-->
             <section class="story section container" id="about">
                 <div class="story__welcome">
@@ -232,7 +159,7 @@
                                     <h2 class="title_banner_h2">BALANCE EN TODAS LAS COSAS</h2>
                                 </div>
                             </div>
-                            <div class="banner_text">
+                            <div class="banner_text banner_amar_raices">
                                 <h2 class="text_title_h2">Amar las raíces</h2>
                                 <p class="text_banner_p">Desde nuestros orígenes trabajamos en sintonía con nuestro entorno, poniendo todo en cada detalle del proceso.</p>
                                 <p class="text_banner_p">Estamos hechos del amor a nuestra tierra...</p>
@@ -290,19 +217,36 @@
                 </div>
                 <div class="bodega_container">
                     <div class="container_alt">
-                        <div class="back_img">
-                            <img src="../assets/img/bodega_ext.png" alt="" class="bodega_back">
+                        <div class="bodega_back">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                                <h2 class="slide_text_bodega">Nuestra bodega</h2>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="../assets/img/bodega-1.jpg" class="d-block w-100 " alt="...">
+                                  </div>
+                                  <div class="carousel-item ">
+                                    <img src="../assets/img/bodega-2.jpg" class="d-block w-100 " alt="...">
+                                  </div>
+                                  <div class="carousel-item ">
+                                    <img src="../assets/img/bodega-3.jpg" class="d-block w-100 " alt="...">
+                                  </div>
+                                  <div class="carousel-item ">
+                                    <img src="../assets/img/bodega-4.jpg" class="d-block w-100 " alt="...">
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- <img src="../assets/img/bodega_ext.png" alt="" class="bodega_back"> -->
                         </div>
                         <div class="container_front">
-                            <div class="banner">
+                            <div class="banner banner_bodega">
                                 <div class="banner_img">
-                                    <img src="../assets/img/family.jpg" alt="" class="image_vina_2">
+                                    <img src="../assets/img/family.jpg" alt="" class="image_vina_2 image_family">
                                 </div>
                                 <div class="right_text">
                                     <h2 class="right_text_title">Nuestra bodega</h2>
                                 </div>
                             </div>
-                            <div class="banner_text text_banner_blur">
+                            <div class="banner_text text_banner_blur banner_amar banner_amar_mas">
                                 <h2 class="text_title_h2">Amar quienes somos</h2>
                                 <p class="text_banner_p">Nuestra mision es elaborar vinos y mostos de alta calidad a partir de la conjugación del suelo, del clima, de la tecnología y, por supuesto, de la pasión productiva y el conocimiento de tres generaciones que nos da paciencia para verlo crecer en el tiempo.</p>
                                 <!-- <p class="text_banner_p">Estamos hechos del amor a nuestra tierra...</p>
@@ -320,7 +264,7 @@
 
             <section class="slider_section ">
                 <div class="carousel-container mt-6">
-                    <div id="carouselFamily" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div id="carouselFamily" class="carousel slide-family carousel-fade carousel-dark" data-bs-ride="carousel" data-bs-interval="3000">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselFamily" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselFamily" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -330,28 +274,28 @@
                         <div class="carousel-inner">
                           <div class="carousel-item active c-item">
                             <img src="../assets/img/todos.jpg" class="d-block w-100 c-img" alt="...">
-                            <div class="carousel-caption d-none d-md-block slide-description">
+                            <div class="carousel-caption d-block slide-description">
                                 <h5>Familia Leytes</h5>
                                 <p>A completar</p>
                               </div>
                           </div>
                           <div class="carousel-item c-item">
                             <img src="../assets/img/aldana.jpg" class="d-block w-100 c-img" alt="...">
-                            <div class="carousel-caption d-none d-md-block slide-description">
+                            <div class="carousel-caption d-block slide-description">
                                 <h5>Aldana Leytes</h5>
                                 <p>A completar</p>
                               </div>
                           </div>
                           <div class="carousel-item c-item">
                             <img src="../assets/img/diego.jpg" class="d-block w-100 c-img" alt="...">
-                            <div class="carousel-caption d-none d-md-block slide-description">
+                            <div class="carousel-caption d-block slide-description">
                                 <h5>Diego Leytes</h5>
                                 <p>A completar</p>
                               </div>
                           </div>
                           <div class="carousel-item c-item">
                             <img src="../assets/img/julio.jpg" class="d-block w-100 c-img" alt="...">
-                            <div class="carousel-caption d-none d-md-block slide-description">
+                            <div class="carousel-caption d-block slide-description">
                                 <h5>Julio Leytes</h5>
                                 <p>A completar</p>
                               </div>
@@ -412,7 +356,7 @@
 
             <!--==================== PRODUCTS ====================-->
             
-            <section class="product container product__section" id="products">
+            <section class="product container product__section p-0" id="products">
 
                 
                 <img class="product__background" src="assets/img/nuestros-productos.jpg" alt="">
