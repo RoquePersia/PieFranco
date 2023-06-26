@@ -69,14 +69,18 @@ const toggleItem = (item) =>{
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
+sections
+console.log(sections.item(4));
 
 function scrollActive(){
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id')
+
+    sections.forEach(actual =>{
+        const sectionHeight = actual.offsetHeight,
+              sectionTop = actual.offsetTop - 58,
+              sectionId = actual.getAttribute('id')
+             console.log("La sección es "+actual.getAttribute('id'));
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
@@ -107,8 +111,6 @@ let imgNegra = 'url(../img/Untitled.png)'
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
-
-console.log(selectedTheme);
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
@@ -146,6 +148,48 @@ const sr = ScrollReveal({
     delay: 400,
     // reset: true
 })
+
+
+
+  function submitForm(event) {
+    event.preventDefault(); // Prevenir el envío del formulario por defecto
+    console.log("Entré al submitForm");
+
+    // Obtener los datos del formulario
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // Realizar la solicitud AJAX utilizando fetch
+    fetch('contact_form.php', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => {
+        if (response.ok) {
+          // Aquí puedes manejar la respuesta del servidor después de enviar el formulario
+          console.log('Formulario enviado correctamente');
+          // Por ejemplo, mostrar un mensaje de éxito en el DOM o realizar otras acciones
+
+          // Opcionalmente, puedes restablecer el formulario después de enviarlo
+          form.reset();
+        } else {
+          // Manejar los errores si la respuesta del servidor no es exitosa
+          console.error('Error en la solicitud. Código de estado:', response.status);
+        }
+      })
+      .catch(error => {
+        // Manejar los errores si ocurrieron durante la solicitud AJAX
+        console.error('Error en la solicitud:', error);
+      });
+  }
+
+
+
+
+
+
+
+  
 
 sr.reveal(`.header`,{origin: 'top'})
 sr.reveal(`.home__data`)
