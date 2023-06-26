@@ -216,7 +216,7 @@ the website, in dark theme
 }
 
 /*=============== NAV ===============*/
-.nav{
+.nav__container{
   height: var(--header-height);
   display: flex;
   justify-content: center;
@@ -352,7 +352,7 @@ the website, in dark theme
 
 .home::before{
   content:"";
-  /* background-image: url(../img/Portada.png); */
+  background-image: url(../img/img-portada-1.jpg);
   background-color:gainsboro;
   background-size: cover;
   position: absolute;
@@ -360,7 +360,7 @@ the website, in dark theme
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.5;
+  opacity: 0.8;
 } 
 
 .home::after{
@@ -580,7 +580,7 @@ the website, in dark theme
 
 .story__wide::before{
   content:"";
-  background-image: url(../img/Portada_seccion2_alt.png);
+  background-image: url(../img/diferencia-1.png);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -660,7 +660,7 @@ the website, in dark theme
 }
 
 .banner{
-  height: 269px;
+  height: 369px;
   width: 100%;
   position: relative;
   /* padding: 10.25rem 0; */
@@ -688,6 +688,7 @@ the website, in dark theme
   display: inline-block;
   left: auto;
   right:0;
+  
 }
 
 .image_vina_2{
@@ -697,6 +698,8 @@ the website, in dark theme
   z-index: -4;
   object-fit:cover;
   background-position: 50px;
+  filter: grayscale(100%);
+  
 }
 
 .right_text{
@@ -801,13 +804,17 @@ the website, in dark theme
   transition:1s;
 }
 
+.story_title_container{
+  border-left: solid;
+  border-width: 4px;
+  border-color: #F8F8F8;
+}
+
 .story_title{
   font-family: 'Unbounded', cursive;
   font-size: 2rem;
   color: #F8F8F8;
-  border-left: solid;
-  border-width: 4px;
-  border-color: #F8F8F8;
+  
   padding-left: 10px;
 }
 
@@ -948,14 +955,7 @@ the website, in dark theme
   top: 20rem;
 }
 
-.image_vina_2{
-  height: 100%;
-  position: absolute;
-  width: 49%;
-  z-index: -4;
-  object-fit:cover;
-  background-position: 50px;
-}
+
 
 .right_text_title{
   font-family: 'Unbounded', cursive;
@@ -982,6 +982,56 @@ the website, in dark theme
   margin-left: 50%;
   width: 40%;
 }
+
+/*=============== SLIDER ===============*/
+
+.slider_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.carousel-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 580px;
+}
+
+.c-item{
+  height: 80vh;
+}
+
+.c-img{
+  object-fit:cover;
+
+}
+
+.carousel-item img{
+  transform: none ; /* Desactiva la transición de transformación */
+}
+
+.slide-description{
+  width: 100%;
+  background-color: transparent;
+  opacity: 0.9;
+  backdrop-filter: blur(40px);
+  
+}
+
+.carousel-caption{
+  left: 0;
+  bottom: 15%;
+}
+
+.carousel-item:first-child .slide-description {
+  color: white;
+}
+
+
+
+
 
 /*=============== STEPS ===============*/
 .steps__bg{
@@ -1102,10 +1152,11 @@ the website, in dark theme
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.8s;
 }
 
 .product__img {
-  width: 100%;
+  height: 100%;
   width: 300px;
   
   transition: 0.3s;
@@ -1114,13 +1165,19 @@ the website, in dark theme
 
 .button__product{
   position: absolute;
-  bottom: 15%;
+  bottom: 30%;
   transition: 0.8s;
   background-color: transparent;
-  opacity: 0.7;
+  opacity: 0.9;
   backdrop-filter: blur(40px);
   border: 1px solid white;
-  padding: 1rem;
+  padding: 0.5rem;
+  width: 270px;
+}
+
+.product__card:hover .button__product{
+  opacity: 0;
+
 }
 
 
@@ -1129,7 +1186,11 @@ the website, in dark theme
 .product__price{
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
-  color: white;
+  color: black;
+}
+
+.product__add{
+  font-size: 0.8rem;
 }
 
 .product__title{
@@ -1649,7 +1710,7 @@ the website, in dark theme
     margin: 0;
   }
 
-  .nav{
+  .nav__container{
 
     display: flex;
     height: calc(var(--header-height) + 1.5rem);
@@ -1763,7 +1824,7 @@ the website, in dark theme
   .about__img{
     width: 380px;
   }
-  .nav{
+  .nav__container{
     font-size: 20px;
   }
 
@@ -2148,17 +2209,11 @@ the website, in dark theme
   .mySlides {display: none}
   .slide {
     vertical-align: middle;
-    border-radius: 10%;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px 5px grey;
     transition: 0.5s;
   }
 
-  .slide:hover {
-    translate: 5px 5px;
-    box-shadow: none;
-    border-radius: 5%;
-    transform: scale(1.5);
-  }
+ 
   
   /* Slideshow container */
   .slideshow-container {
@@ -2228,7 +2283,8 @@ the website, in dark theme
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    /* background-color: #F8F8F8; */
+   
   }
   
   /* Fading animation */

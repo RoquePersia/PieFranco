@@ -11,17 +11,18 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Noto+Serif+Toto:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Quicksand:wght@300;400;500;600&family=Unbounded:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
+        
         <title>Pie Franco</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            <nav class="nav container">
+            <nav class="nav__container container">
                 <!-- <div class="header__logo">
                     <img href="#" src="assets/img/Logo.png" alt="" class="img__logo">
 
@@ -64,17 +65,7 @@
                 </div>
 
                 
-                <div class="nav__btns">
-                    <!-- <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div> -->
-                    <!-- Theme change button -->
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-                    </div>
-                </div>
+                
             </nav>
         </header>
 
@@ -222,12 +213,12 @@
                 <div class="big__container">
                     <div class="container_alt">
                         <div class="back_img">
-                            <img src="../assets/img/Vinas_marco_1.png" alt="" class="image_vina">
+                            <img src="../assets/img/balance.jpg" alt="" class="image_vina">
                         </div>
                         <div class="container_front">
                             <div class="banner">
                                 <div class="banner_img">
-                                    <img src="../assets/img/Vinas_marco_2.png" alt="" class="image_vina_2">
+                                    <img src="../assets/img/balance-2.jpg" alt="" class="image_vina_2">
                                 </div>
                                 <div class="banner_title">
                                     <h2 class="title_banner_h2">BALANCE EN TODAS LAS COSAS</h2>
@@ -247,20 +238,23 @@
                 <div class="big__container_story">        
                     <div class="container_adjust_width">
                         <div class="container_img_story">
-                            <img class="worker_h" src="../assets/img/trabajador_color.jpg" alt="">
-                            <img class="worker_f" src="../assets/img/trabajadora_color.jpg" alt="">
+                            <img class="worker_h" src="../assets/img/trabajador_color.png" alt="">
+                            <img class="worker_f" src="../assets/img/trabajadora_color.png" alt="">
                         </div>
                         <div class="container_text_story">
-                            <h2 class="story_title">Un poco</h2>
-                            <h2 class="story_title">de historia</h2>
-                            <p class="story_text">Nacidos del amor, nuestra historia comienza en 1890, con Rosa Aguilera, hija del terrateniente don Aguilera, familia de gran poder y tierras en Mendoza. 
-                                Rosa vivía tranquilamente en el chalet de su familia, pero un día, un extraño llamado Julio Leytes, encargado del establo, toco a su puerta y cayeron locamente enamorados. 
-                                Sin la aceptación de la familia Aguilera, deciden huir a la provincia vecina de San Juan, donde forman su familia, teniendo 6 hijos, Evaristo el primero. </p>
+                            <div class="story_title_container">
+                                <h2 class="story_title">Un poco</h2>
+                                <h2 class="story_title">de historia</h2>
+                            </div>
+                            
+                            <p class="story_text">Nacidos del amor, nuestra historia comienza en 1890, con Rosa Aguilera, hija del adinerado terrateniente Don Aguilera. Rosa vivía en su chalet, pero un día, Julio Leytes, encargado del establo de la familia, tocó a su puerta y cayeron locamente enamorados. Sin la aceptación de la familia Aguilera, deciden huir a la provincia vecina de San Juan, donde forman su familia teniendo 6 hijos, Evaristo el primero. </p>
+                            <p class="story_text">Es el mismo Evaristo quien, 30 años más tarde al volver a Mendoza, compra su primera finca, continuando el legado familiar de la pasión por la vid. Se une en matrimonio con Ada Brandi con quien tienen 4 hijos siendo Julio Leytes el primero de ellos. Heredando de sus antepasados el entusiasmo por cultivar y respetar los viñedos de Mendoza. </p>
+
                         </div>
                     </div>
                     
                 </div>
-                <div class="big_container_mza">    
+                <!-- <div class="big_container_mza">    
                     <div class="container_text_mza">
                         <h2 class="text_mza_title">La historia continúa</h2>
                         <p class="text_mza_p">Al volver a Mendoza, compran su primera finca, inspirados por continuar el legado familiar de la pasión por la vid, Evaristo se une en matrimonio con Ada Brandi, con quien tienen 4 hijos, siendo Julio Leytes el primero de ellos. 
@@ -273,7 +267,7 @@
                         
                     </div>
                     
-                </div>
+                </div> -->
                 <div class="big_container_autumn"> 
                     <div class="autumn_img_container">
                         
@@ -294,7 +288,7 @@
                         <div class="container_front">
                             <div class="banner">
                                 <div class="banner_img">
-                                    <img src="../assets/img/family.jpeg" alt="" class="image_vina_2">
+                                    <img src="../assets/img/family.jpg" alt="" class="image_vina_2">
                                 </div>
                                 <div class="right_text">
                                     <h2 class="right_text_title">Nuestra bodega</h2>
@@ -310,6 +304,63 @@
                         </div >
                     </div>
                 </div>
+
+                
+
+                
+            </section>
+
+            <section class="slider_section ">
+                <div class="carousel-container mt-6">
+                    <div id="carouselFamily" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselFamily" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselFamily" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselFamily" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselFamily" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active c-item">
+                            <img src="../assets/img/todos.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block slide-description">
+                                <h5>Familia Leytes</h5>
+                                <p>A completar</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item c-item">
+                            <img src="../assets/img/aldana.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block slide-description">
+                                <h5>Aldana Leytes</h5>
+                                <p>A completar</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item c-item">
+                            <img src="../assets/img/diego.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block slide-description">
+                                <h5>Diego Leytes</h5>
+                                <p>A completar</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item c-item">
+                            <img src="../assets/img/julio.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block slide-description">
+                                <h5>Julio Leytes</h5>
+                                <p>A completar</p>
+                              </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFamily" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFamily" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                
+
             </section>
                         
                     
@@ -374,12 +425,13 @@
                     <article class="product__card">
                         <!-- <div class="product__circle"></div> -->
 
-                        <img src="assets/img/Products_1.jpg" alt="" class="product__img">
+                        <img src="assets/img/red_single.jpeg" alt="" class="product__img">
 
                         <button class="button__product">
                             <h3 class="product__title">Red Single Strength Grape Juice</h3>
+                            <p class="product__add">(NFC = NOT FROM CONCENTRATE)</p>
                         </button>
-                        <a class="product__pdf" href="assets/pdf/red-single-strength.pdf" download>
+                        <a class="product__pdf" href="assets/pdf/RSSGJ - PIE FRANCO.pdf" download>
                             <img class="img__pdf" src="assets/img/pdf.png" alt="Descargar PDF" class="download-icon">
                           </a> 
                         
@@ -388,14 +440,44 @@
                     <article class="product__card">
                         <!-- <div class="product__circle"></div> -->
 
-                        <img src="assets/img/Products_2.jpg" alt="" class="product__img">
+                        <img src="assets/img/white-single.jpeg" alt="" class="product__img">
 
                         <button class="button__product">
                             <h3 class="product__title">White Single Strength Grape Juice</h3>
+                            <p class="product__add">(NFC = NOT FROM CONCENTRATE)</p>
                         </button>
-                        <a class="product__pdf" href="assets/pdf/white-single-strength.pdf" download>
+                        <a class="product__pdf" href="assets/pdf/WSSGJ - PIE FRANCO.pdf" download>
                             <img class="img__pdf" src="assets/img/pdf.png" alt="Descargar PDF" class="download-icon">
                           </a> 
+                        
+                    </article>
+                    <article class="product__card">
+                        <!-- <div class="product__circle"></div> -->
+
+                        <img src="assets/img/red-juice.jpeg" alt="" class="product__img">
+
+                        <button class="button__product">
+                            <h3 class="product__title">Red Grape Juice Concentrated</h3>
+                            <p class="product__add">(RGJC)</p>
+                        </button>
+                        <a class="product__pdf" href="assets/pdf/RGJC - PIE FRANCO.pdf" download>
+                            <img class="img__pdf" src="assets/img/pdf.png" alt="Descargar PDF" class="download-icon">
+                          </a> 
+                        
+                    </article>
+                    <article class="product__card">
+                        <!-- <div class="product__circle"></div> -->
+
+                        <img src="assets/img/white-juice.jpeg" alt="" class="product__img">
+
+                        <button class="button__product">
+                            <h3 class="product__title">White Grape Juice Concentrated</h3>
+                            <p class="product__add">(WGJC)</p>
+                        </button>
+                        <a class="product__pdf" href="assets/pdf/WGJC - PIE FRANCO.pdf" download>
+                            <img class="img__pdf" src="assets/img/pdf.png" alt="Descargar PDF" class="download-icon">
+                          </a> 
+                        
                     </article>
 
                     
@@ -581,7 +663,7 @@
                         <div class="contact__inputs">
                             <div class="contact__content">
                                 <input type="email" placeholder=" " class="contact__input" name="email">
-                                <label for="" class="contact__label">Nombre</label>
+                                <label for="" class="contact__label">Email</label>
                             </div>
 
                             <div class="contact__content">
@@ -672,6 +754,7 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <!--=============== SLIDE JS ===============-->
         <!-- <script scr="assets/js/slide.js"></script>
 
