@@ -47,8 +47,7 @@
   --z-fixed: 100;
   
   /*========== z index ==========*/
-  /* --mountains: url(../img/decor-section-bottom.webp) */
-  --mountains: 
+  --mountains: url(../img/decor-section-bottom.webp);
 }
 
 /* Responsive typography */
