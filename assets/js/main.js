@@ -1,18 +1,15 @@
 
-  function cambiarIdioma(idioma) {
-    var url = window.location.href;
-    var urlNueva = '';
-
+function cambiarIdioma(idioma) {
+    var url = new URL(window.location.href);
+  
     if (idioma === 'es') {
-      // Reemplaza "index-en.html" por "index.html" para cambiar a la versión en español
-      urlNueva = url.replace('english.html', 'index.html');
+      url.pathname = url.pathname.replace('/english.html', '/index.html');
     } else if (idioma === 'en') {
-      // Reemplaza "index.html" por "index-en.html" para cambiar a la versión en inglés
-      urlNueva = url.replace('index.html', 'english.html');
+      url.pathname = url.pathname.replace('/index.html', '/english.html');
     }
-
+  
     // Redirige a la nueva URL
-    window.location.href = urlNueva;
+    window.location.href = url.href;
   }
 
 
