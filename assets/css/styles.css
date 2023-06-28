@@ -252,11 +252,13 @@ the website, in dark theme
 /*=============== NAV ===============*/
 
 .botonera-idioma{
+  display: flex;
   position: absolute;
   bottom: -10px;
   right: 10%;
   width: 90px;
   color: transparent;
+  gap: 10px;
 }
 
 .boton-idioma{
