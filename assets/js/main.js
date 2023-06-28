@@ -1,3 +1,21 @@
+
+  function cambiarIdioma(idioma) {
+    var url = window.location.href;
+    var urlNueva = '';
+
+    if (idioma === 'es') {
+      // Reemplaza "index-en.html" por "index.html" para cambiar a la versión en español
+      urlNueva = url.replace('index-en.html', 'index.html');
+    } else if (idioma === 'en') {
+      // Reemplaza "index.html" por "index-en.html" para cambiar a la versión en inglés
+      urlNueva = url.replace('index.html', 'index-en.html');
+    }
+
+    // Redirige a la nueva URL
+    window.location.href = urlNueva;
+  }
+
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),

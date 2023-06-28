@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -74,12 +74,19 @@
 
                     
                 </div>
+                <div class="botonera-idioma">
+                  <button class="boton-idioma" onclick="cambiarIdioma('es')"><img class="icono-bandera spain-flag" src="../assets/img/spainflag.png" alt=""></button>
+                  <button class="boton-idioma" onclick="cambiarIdioma('en')"><img class="icono-bandera usa-flag" src="../assets/img/usaflag.png" alt=""></button>
+                </div>
             </nav>
         </header>
 
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
+              <a href="https://wa.me/+5492634364704" target="_blank" class="boton-flotante">
+                <img src="assets/img/whatsapp-icono.png" alt="WhatsApp" class="icono-whatsapp">
+              </a>
                 <div class="home__container container grid">
                     <img src="assets/img/img_portada.png" alt="" class="home__img">
 
@@ -276,28 +283,27 @@
                             <img src="../assets/img/todos.jpg" class="d-block w-100 c-img" alt="...">
                             <div class="carousel-caption d-block slide-description">
                                 <h5>Familia Leytes</h5>
-                                <p>A completar</p>
                               </div>
                           </div>
                           <div class="carousel-item c-item">
                             <img src="../assets/img/aldana.jpg" class="d-block w-100 c-img" alt="...">
                             <div class="carousel-caption d-block slide-description">
                                 <h5>Aldana Leytes</h5>
-                                <p>A completar</p>
+                                <p>Licenciada en Comercio Internacional</p>
                               </div>
                           </div>
                           <div class="carousel-item c-item">
                             <img src="../assets/img/diego.jpg" class="d-block w-100 c-img" alt="...">
                             <div class="carousel-caption d-block slide-description">
                                 <h5>Diego Leytes</h5>
-                                <p>A completar</p>
+                                <p>Ingeniero Agrónomo</p>
                               </div>
                           </div>
                           <div class="carousel-item c-item">
                             <img src="../assets/img/julio.jpg" class="d-block w-100 c-img" alt="...">
                             <div class="carousel-caption d-block slide-description">
                                 <h5>Julio Leytes</h5>
-                                <p>A completar</p>
+                                <p>Ingeniero Agrónomo</p>
                               </div>
                           </div>
                         </div>
@@ -594,19 +600,12 @@
 
                         <div class="contact__data">
                             <div class="contact__information">
-                                <h3 class="contact__subtitle">Llamanos para soporte inmediato</h3>
-                                <span class="contact__description">
-                                    <i class="ri-phone-line contact__icon"></i>
-                                    +54 261 353-5337
-                                </span>
+                                <h3 class="contact__subtitle">Envianos un mensaje a nuestro correo<br> completando el siguiente formulario</h3>
+                                
                             </div>
 
                             <div class="contact__information">
-                                <h3 class="contact__subtitle">O escribinos un e-mail</h3>
-                                <span class="contact__description">
-                                    <i class="ri-mail-line contact__icon"></i>
-                                    aleytes@piefranco.com.ar
-                                </span>
+                                <h3 class="contact__subtitle">O escribinos a nuestro WhatsApp pulsando <br>directamente el botón flotante</h3>
                             </div>
                         </div>
                     </div>
@@ -640,7 +639,7 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
-            <div class="footer__container container grid">
+            <div class="footer__container container">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
                         Pie Franco
@@ -649,7 +648,7 @@
 
                 </div>
 
-                <div class="footer__content">
+                <!-- <div class="footer__content">
                     <h3 class="footer__title">Nuestra dirección</h3>
 
                     <ul class="footer__data">
@@ -677,7 +676,7 @@
                             </a>
                         </div>
                     </ul>
-                </div>
+                </div> -->
 
                 <!-- <div class="footer__content">
                     <h3 class="footer__title">
@@ -691,6 +690,7 @@
                         <img src="assets/img/card4.png" alt="" class="footer__card">
                     </div>
                 </div> -->
+                
             </div>
 
             <p class="footer__copy">&#169; Persia Roque. All rigths reserved</p>
