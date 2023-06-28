@@ -419,6 +419,10 @@ the website, in dark theme
 
 }
 
+.white{
+  color: white;
+}
+
 .home::before{
   content:"";
   background-image: url(../img/img-portada-1.jpg);
@@ -968,8 +972,12 @@ the website, in dark theme
 .big_container_autumn{
   position: relative;
   width: 100%;
-  padding: 3rem;
+  
   margin: 0 auto;
+}
+
+.autumn_img_container{
+  padding: 3rem;
 }
 
 .autumn_text_container{
@@ -1018,6 +1026,7 @@ the website, in dark theme
 .autumn_img{
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
  /*=============== Séptima parte ===============*/
