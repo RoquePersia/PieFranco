@@ -253,9 +253,10 @@ the website, in dark theme
 
 .botonera-idioma{
   display: flex;
-  position: absolute;
-  bottom: -10px;
-  right: 10%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
   width: 90px;
   color: transparent;
   gap: 10px;
@@ -1854,6 +1855,7 @@ the website, in dark theme
     /* margin-left: auto; */
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .home__container,
